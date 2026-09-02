@@ -121,3 +121,13 @@ git push --tags
 git ls-remote --tags
 
 EPAT Aug19
+
+## Continuous Integration Exercise
+
+This fork implements the CI practices covered in the course:
+
+- builds and runs the automated test suite on every push and pull request to `main`;
+- uses the checked-in Maven Wrapper for a reproducible build;
+- cancels superseded runs on the same branch and limits build duration;
+- grants the workflow read-only repository access;
+- runs Snyk scanning and Telegram notification only when their repository secrets are configured.
